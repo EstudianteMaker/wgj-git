@@ -1,5 +1,9 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    scene.cameraFollowSprite(hero)
+})
+let hero: Sprite = null
 scene.setBackgroundColor(9)
-let hero = sprites.create(img`
+hero = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
